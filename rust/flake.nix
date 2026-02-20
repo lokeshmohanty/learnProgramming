@@ -25,7 +25,6 @@
           "rust-src"
           "rustc"
           "rustfmt"
-          "rust-analyzer"
         ];
 
         # Runtime libraries needed by the Slint binary
@@ -48,6 +47,7 @@
             pkgs.pkg-config
             pkgs.cargo-watch
             pkgs.just
+            pkgs.evcxr # rust cli repl
           ];
 
           buildInputs = [
